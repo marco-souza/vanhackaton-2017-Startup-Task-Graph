@@ -25,6 +25,8 @@ To complete this task, I used:
 - __Pug__ - A Template language to generate HTML.
 - __Gulp__ - Web Compiler.
 - __Webpack__ - Web Bundler.
+- __ESLint__ - Code inspector for JavaScript.
+- __Babel__ - JavaScript transpiler for ES6/ES7.
 - __Npm__ - Dependency mananger for nodejs based applications.
 - __Darch__ - A React Framework that I develop along with my coworkers.
 - __React Bootstrap__ - The Bootstrap framework, rebuilt for React.
