@@ -55,8 +55,8 @@ To see the results, clone that repository and follow the next steps:
 
     4.1) access `Settings > More Tools > Extensions`
 
-    ![Go to Chrome Extensions](https://raw.githubusercontent.com/marco-souza/vanhackaton-2017-Startup-Task-Graph/master/docs/chrome-ext-1.png)
+    ![Go to Chrome Extensions](./docs/images/chrome-ext-1.png)
 
     4.2) Check the Developer Mode. After that, click on button `Load unpacked extension...` and select the `dist` folder. You will see a new icon on your Google Chrome Browser.
 
-    ![Use the app as Chrome Extensions](https://raw.githubusercontent.com/marco-souza/vanhackaton-2017-Startup-Task-Graph/master/docs/chrome-ext-2.png)
+    ![Use the app as Chrome Extensions](./docs/images/chrome-ext-2.png)
