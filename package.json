@@ -1,5 +1,5 @@
 {
-  "name": "Startup Task Graph",
+  "name": "Startup Tasks Graph",
   "version": "0.0.1",
   "description": "Startup Task Graph is a challenge of the Hackaton os 2017.",
   "main": "app/src/main.jsx",
