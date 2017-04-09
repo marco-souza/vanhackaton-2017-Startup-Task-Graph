@@ -3,11 +3,8 @@ import Grid from "react-bootstrap/lib/Grid";
 import Row from "react-bootstrap/lib/Row";
 import Col from "react-bootstrap/lib/Col";
 import Jumbotron from "react-bootstrap/lib/Jumbotron";
-import Panel from "react-bootstrap/lib/Panel";
 import Pager from "react-bootstrap/lib/Pager";
-import Glyphicon from "react-bootstrap/lib/Glyphicon";
 import Badge from "react-bootstrap/lib/Badge";
-import Label from "react-bootstrap/lib/Label";
 import Task from  "../task";
 import styles from  "./style.styl";
 import { pluralize } from "../../commons/utils";
@@ -25,7 +22,7 @@ export default class Component extends React.Component {
 
     // Rendering a list of tasks
     renderTaskList(tasks) {
-        let result = [], votes = [];
+        let result = [];
         for (let item of tasks) {
             result.push(
                 <Col xs={12} md={6} key={item.id}>

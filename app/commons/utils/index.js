@@ -6,4 +6,4 @@ module.exports = {
         else
             return `${num} ${str}`;
     },
-}
+};

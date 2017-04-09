@@ -1,15 +1,12 @@
 import React from "react";
 // Darch Framework
 import Container from "darch/lib/container";
-// import Grid from "darch/lib/grid";
-import Text from "darch/lib/text";
 // Bootstrap ReactJS
 import PageHeader from "react-bootstrap/lib/PageHeader";
 
 import Project from "../project";
 import { dataset } from "../../config";
-import classNames from "classnames";
-import styles from  "./style.styl";
+import "./style.styl";
 
 export default class Component extends React.Component {
 
