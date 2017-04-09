@@ -12,7 +12,7 @@ import ListGroup from "react-bootstrap/lib/ListGroup";
 import ListGroupItem from "react-bootstrap/lib/ListGroupItem";
 import Comments from  "../comments";
 import styles from  "./style.styl";
-import { pluralize } from "../utils";
+import { pluralize } from "../../commons/utils";
 
 export default class Component extends React.Component {
 
@@ -23,7 +23,6 @@ export default class Component extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log(props);
     }
 
     renderComments() {
@@ -46,7 +45,6 @@ export default class Component extends React.Component {
                 header={
                     `Task ${this.props.data.id} - ${this.props.data.title}`
                 }
-                className={styles.card}
             >
                 <br/>
                 {/* Body */}

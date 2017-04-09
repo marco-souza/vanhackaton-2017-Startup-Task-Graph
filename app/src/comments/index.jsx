@@ -20,7 +20,6 @@ export default class Component extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log(props);
     }
 
     render() {
@@ -30,7 +29,7 @@ export default class Component extends React.Component {
                 header={`${this.props.data.userinfo.name} says:`}
             >
                 {this.props.data.comment}
-                &nbsp; 
+                &nbsp;
                 <Badge>
                     <small>{`${this.props.data.total_votes + this.state.myVote} votes`}</small>
                 </Badge>

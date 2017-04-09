@@ -10,42 +10,16 @@ import Badge from "react-bootstrap/lib/Badge";
 import Label from "react-bootstrap/lib/Label";
 import Task from  "../task";
 import styles from  "./style.styl";
-import { pluralize } from "../utils";
-import {LoggerFactory,Redux} from "darch/lib/utils";
+import { pluralize } from "../../commons/utils";
 
 export default class Component extends React.Component {
 
     state = {
-        showTasks: false,
-        myVote: 0,
-        allVotes: 0
+        showTasks: false
     }
 
     constructor(props) {
         super(props);
-    }
-
-    async componentDidMount() {
-        await Redux.shared.store.subscribe(this.getAllVotes);
-        await this.setReduxState();
-    }
-
-    async getAllVotes(){
-        console.log(Redux.shared.store.getState());
-        await this.setState({
-            allVotes: Redux.shared.store.getState().votes[this.props.id]
-        });
-    }
-
-    async setReduxState() {
-        // Set redux state
-        await Redux.shared.store.dispatch({
-            type: 'SET-VOTES',
-            data: {
-                key: this.props.id,
-                value: this.props.data.total_votes + this.state.myVote
-            }
-        });
     }
 
 
@@ -58,7 +32,6 @@ export default class Component extends React.Component {
                     <Task data={item} />
                 </Col>
             );
-
         }
         return result;
     }
@@ -72,10 +45,8 @@ export default class Component extends React.Component {
             >
                 <h2>
                     {this.props.data.title}&nbsp;
-                    <Badge className={styles.clicable} onClick={()=>
-                        this.setVotes()
-                    }>
-                        {pluralize(this.state.allVotes, "vote")}
+                    <Badge>
+                        {pluralize(this.props.data.total_votes, "vote")}
                     </Badge>
                 </h2>
                 <h6>{this.props.data.intro}</h6>

@@ -1,14 +1,14 @@
-import dataset from "./dataset.json";
+let projects = require("./dataset.json");
 
 module.exports = {
     "webinfo": {
-        "title": "Chrome extensions",
-        "descriptions": "A sample of a Chrome extension.",
-        "keywords": ""
+        "title": "Startup Task Graph",
+        "descriptions": "Startup Task Graph is a challenge of the Hackaton os 2017.",
+        "keywords": "VanHackaton, Startup Task Graph"
     },
     // Dataset for the Challenge
     dataset: {
-        "projects": dataset
+        projects
     }
 
 };
