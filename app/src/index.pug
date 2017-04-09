@@ -1,0 +1,20 @@
+html(lang='pt-br')
+    head
+        title #{title}
+        meta(name="description" content=description)
+        meta(name='keywords' content=keywords)
+            
+        // Lazy Load
+        script(src="./assets/lazyload.js")
+            
+        // Latest compiled and minified CSS
+        style(type="text/css")
+            body
+                min-width: 400px
+            
+            include ../../node_modules/bootstrap/dist/css/bootstrap.min.css
+            include ../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css
+
+
+    body
+        div#root

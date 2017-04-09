@@ -1,0 +1,53 @@
+{
+  "name": "Startup Task Graph",
+  "version": "0.0.1",
+  "description": "Startup Task Graph is a challenge of the Hackaton os 2017.",
+  "main": "app/src/main.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "make dev"
+  },
+  "keywords": [
+    "VanHackaton",
+    "Startup Task Graph challenge"
+  ],
+  "author": "Marco Antônio",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "bootstrap": "^3.3.7",
+    "darch": "https://github.com/nosebit/darch.git#dev",
+    "gulp": "^3.9.1",
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.8",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-autobind-class-methods": "^5.0.1",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.28.0",
+    "del": "^2.2.2",
+    "eslint": "^3.18.0",
+    "eslint-loader": "^1.7.0",
+    "eslint-plugin-react": "^6.10.3",
+    "file-loader": "^0.10.1",
+    "gulp-file": "^0.3.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-util": "^3.0.8",
+    "path": "^0.12.7",
+    "style-loader": "^0.16.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "url-loader": "^0.5.8"
+  }
+}
