@@ -1,4 +1,4 @@
-# Startup Task Graph
+# Startup Tasks Graph
 
 The present code is for the challenge __Crowdholding - Startup Tasks Graph__ on VanHackaton 2017.
 
